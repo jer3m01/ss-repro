@@ -1,7 +1,4 @@
-import docsearch from "@docsearch/js";
-import { useMatch } from "@solidjs/router";
 import { clsx } from "clsx";
-import { onMount } from "solid-js";
 
 import {
 	LATEST_CORE_CHANGELOG_URL,
@@ -17,16 +14,6 @@ interface HeaderProps {
 }
 
 export function Header(props: HeaderProps) {
-	const isChangelogPath = useMatch(() => "/docs/changelog/*");
-
-	onMount(() => {
-		docsearch({
-			appId: "H7ZQSI0SAN",
-			apiKey: "c9354456dd4bb74c37e4d2b762b89b88",
-			indexName: "kobalte",
-			container: "#docsearch",
-		});
-	});
 
 	return (
 		<header
@@ -57,9 +44,7 @@ export function Header(props: HeaderProps) {
 						href="/docs/core/overview/introduction"
 						class={clsx(
 							"px-3 py-2 rounded-md flex items-center justify-center transition",
-							!isChangelogPath()
-								? "text-sky-700 hover:text-sky-800 dark:text-sky-300 dark:hover:text-sky-200 hover:bg-sky-100 dark:hover:bg-sky-800"
-								: "text-zinc-700 hover:text-zinc-800 dark:text-zinc-300 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800",
+											"text-zinc-700 hover:text-zinc-800 dark:text-zinc-300 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800",
 						)}
 					>
 						Components
@@ -68,9 +53,7 @@ export function Header(props: HeaderProps) {
 						href={LATEST_CORE_CHANGELOG_URL}
 						class={clsx(
 							"px-3 py-2 rounded-md flex items-center justify-center transition",
-							isChangelogPath()
-								? "text-sky-700 hover:text-sky-800 dark:text-sky-300 dark:hover:text-sky-200 hover:bg-sky-100 dark:hover:bg-sky-800"
-								: "text-zinc-700 hover:text-zinc-800 dark:text-zinc-300 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800",
+	"text-zinc-700 hover:text-zinc-800 dark:text-zinc-300 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800",
 						)}
 					>
 						Changelog
