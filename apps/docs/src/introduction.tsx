@@ -1,4 +1,4 @@
-export default function() {
+export function Introduction() {
 	return <>
 	<h1>Introduction</h1>
 

@@ -1,4 +1,4 @@
-export default function() {
+export function GettingStarted() {
 	return <>
 	<h1>Getting started</h1>
 	
