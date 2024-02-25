@@ -20,11 +20,9 @@ export default function App() {
 			root={(props) => (
 				<MetaProvider>
 					<Title>Kobalte</Title>
-					<ColorModeProvider storageManager={storageManager}>
-						<MDXProvider components={{}}>
-							<Suspense>{props.children}</Suspense>
-						</MDXProvider>
-					</ColorModeProvider>
+					<MDXProvider components={{}}>
+						<Suspense>{props.children}</Suspense>
+					</MDXProvider>
 				</MetaProvider>
 			)}
 		>
