@@ -17,8 +17,6 @@
     "build": "turbo run build"
   },
   "devDependencies": {
-    "@types/testing-library__jest-dom": "6.0.0",
-    "babel-preset-solid": "1.7.7",
     "inquirer": "8.2.5",
     "solid-js": "1.8.8",
     "turbo": "1.10.13",
