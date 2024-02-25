@@ -113,9 +113,6 @@ importers:
 
   apps/docs:
     dependencies:
-      '@kobalte/core':
-        specifier: 0.12.1
-        version: link:../../packages/core
       '@solidjs/meta':
         specifier: 0.29.3
         version: 0.29.3(solid-js@1.8.15)
