@@ -11,8 +11,6 @@ import { FileRoutes } from "@solidjs/start";
 import { Suspense } from "solid-js";
 import { MDXProvider } from "solid-mdx";
 
-import { mdxComponents } from "./mdx-components";
-
 
 export default function App() {
 	const storageManager = cookieStorageManagerSSR("");
@@ -23,7 +21,7 @@ export default function App() {
 				<MetaProvider>
 					<Title>Kobalte</Title>
 					<ColorModeProvider storageManager={storageManager}>
-						<MDXProvider components={mdxComponents}>
+						<MDXProvider components={{}}>
 							<Suspense>{props.children}</Suspense>
 						</MDXProvider>
 					</ColorModeProvider>
