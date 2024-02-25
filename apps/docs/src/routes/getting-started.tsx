@@ -6,12 +6,12 @@ export default function() {
 
 	<p>Install Kobalte by running either of the following.</p>
 
-	<a href="/docs/core/overview/getting-started">Current: Getting Started</a>
+	<a href="/getting-started">Current: Getting Started</a>
 
 	<br/>
 	<br/>
 
-	<a href="/docs/core/overview/introduction">Previous: Introduction</a>
+	<a href="/">Previous: Introduction</a>
 
 	<p>-- stripped for repro --</p>
 	</>
